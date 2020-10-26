@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #e91e63, #fffde7);
+}
+
+.judul h1{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 10px;
+    left: 0;
+}
+
+.judul p{
+    margin-top: 20px;
+}
+.judul p span{
+    color: blue;
+}
+
+.player{
+    position: relative;
+    width: 350px;
+    background: linen;
+    box-shadow: 0 0 20px black;
+    margin: 50px;
+}
+
+.player h1{
+    color: white;
+    position: absolute;
+    font-size: 23px;
+    bottom: 0px;
+    left: 0px;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+}
+.player .imgbx{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.player .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.player audio {
+    width: 100%;
+    outline: none;
+}
+
+
+.player2{
+    position: relative;
+    width: 350px;
+    background: linen;
+    box-shadow: 0 0 20px black;
+}
+
+.player2 h1{
+    color: white;
+    position: absolute;
+    font-size: 23px;
+    bottom: 0px;
+    left: 0px;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+}
+.player2 .imgbx2{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.player2 .imgbx2 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.player2 audio {
+    width: 100%;
+    outline: none;
+}
+
+
+.player3{
+    position: relative;
+    width: 350px;
+    background: linen;
+    box-shadow: 0 0 20px black;
+    margin: 50px;
+}
+
+.player3 h1{
+    color: white;
+    position: absolute;
+    font-size: 23px;
+    bottom: 0px;
+    left: 0px;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+}
+
+.player3 .imgbx3{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.player3 .imgbx3 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.player3 audio {
+    width: 100%;
+    outline: none;
+}
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 670px){
+    body{
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .player, .player2, .player3{
+        width: 270px;
+    }
+}
